@@ -13,23 +13,23 @@ class Hero:
     def draw(self):
             if self.running:
                 if self.direction == 0:
-                   pyxel.blt(self.position_x, self.position_y, 0, 16*int(self.frame), 48, 16, 15)
+                   pyxel.blt(self.position_x, self.position_y, 0, 16*int(self.frame), 48, 16, 15, pyxel.COLOR_BLACK)
                 else:
-                    pyxel.blt(self.position_x, self.position_y, 0, 16*int(self.frame), 32, 16, 15)
+                    pyxel.blt(self.position_x, self.position_y, 0, 16*int(self.frame), 32, 16, 15, pyxel.COLOR_BLACK)
             else:
                 if self.attacking:
                     if self.direction == 0:
-                       pyxel.blt(self.position_x, self.position_y, 0, 0, 16, 16, 15)
+                       pyxel.blt(self.position_x, self.position_y, 0, 0, 16, 16, 15, pyxel.COLOR_BLACK)
                     else:
-                         pyxel.blt(self.position_x, self.position_y, 0, 16, 16, 16, 15)    
+                         pyxel.blt(self.position_x, self.position_y, 0, 16, 16, 16, 15, pyxel.COLOR_BLACK)    
         
 
                 else:
                     if self.direction == 0:
-                       pyxel.blt(self.position_x, self.position_y, 0, 0, 0, 16, 16)
+                       pyxel.blt(self.position_x, self.position_y, 0, 0, 0, 16, 16, pyxel.COLOR_BLACK)
 
                     
-                       pyxel.blt(self.position_x, self.position_y, 0, 16, 0, 16, 16)
+                       pyxel.blt(self.position_x, self.position_y, 0, 16, 0, 16, 16, pyxel.COLOR_BLACK)
 
             
                     
