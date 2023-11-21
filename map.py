@@ -1,16 +1,5 @@
 import pyxel
-
-class Map:
-    def __init__(self):
-        self.width = 10
-        self.height = 7
-        self.x = 0
-        self.y = 0
-        self.maps = [
-            [INTRODUCTION, SANDPLACE ],
-            [FLOREST_1, FLOREST_2 ]
-        ]
-        INTRODUCTION = [
+INTRODUCTION = [
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
             [2, 0, 0, 1, 1, 0, 0, 0, 0, 2],
@@ -21,7 +10,7 @@ class Map:
             [2, 2, 2, 2, 2, 0, 2, 2, 2, 2], 
         ]
 
-        SANDPLACE= [
+SANDPLACE= [
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2], 
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
@@ -29,10 +18,10 @@ class Map:
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
-            [2, 2, 2, 2, 2, 0, 2, 2, 2, 2], 
+            [2, 2, 2, 2, 2, 0, 2, 2, 2, 2],  
         ]
 
-        FLOREST_1 = [
+FLOREST_1 = [
             [2, 2, 2, 2, 2, 0, 2, 2, 2, 2],
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
@@ -43,7 +32,7 @@ class Map:
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2], 
         ]
 
-        FLOREST_2 = [
+FLOREST_2 = [
             [2, 2, 2, 2, 2, 0, 2, 2, 2, 2],
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
@@ -52,6 +41,19 @@ class Map:
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 2],
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
         ]
+
+       
+class Map:
+    def __init__(self):
+        self.width = 10
+        self.height = 7
+        self.x = 0
+        self.y = 0
+        self.maps = [
+            [INTRODUCTION, SANDPLACE ],
+            [FLOREST_1, FLOREST_2 ]
+        ]
+        
 
        
 
