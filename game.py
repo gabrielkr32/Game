@@ -2,10 +2,14 @@
 import pyxel
 import hero
 import map
+import body
 class Game:
     def __init__(self):
-        self.hero = hero.Hero(75, 50)
+        self.hero = hero.Hero(self, 75, 50)
         self.map = map.Map()
+        self.bodies = [
+            body.Body(30, 30, 160, 1),
+        ]
 
 
         pyxel.init(160, 120, title="Portal da Escuridão")
