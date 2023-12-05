@@ -72,18 +72,18 @@ class Hero:
             self.running = True
         if pyxel.btn(pyxel.KEY_A):
             self.position_x -= 1
-            self.body.x += 1
+            self.body.x-= 1
             self.direction = DIRECAO_ESQUERDA
             self.running = True
         if pyxel.btn(pyxel.KEY_W):
             self.position_y -= 1
-            self.body.x += 1
+            self.body.y -= 1
             self.direction = DIRECAO_ACIMA
             self.running = True
             
         if pyxel.btn(pyxel.KEY_S):
             self.position_y += 1
-            self.body.x += 1
+            self.body.y+= 1
             self.running = True
             
             

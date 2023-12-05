@@ -22,21 +22,28 @@ class Game:
         self.map.update()
         self.hero.update()
         if self.hero.position_x < 0:
+
             self.hero.position_x = 160
             self.map.x -= 1
 
         if self.hero.position_x > 160:
+            print("valor hero", self.hero.position_x)
+        
             self.hero.position_x = 0
+            self.hero.body.x = 0 # ++
             self.map.x += 1
-
+            print ( "valor map x", self.map.x )
+            print("valor hero x", self.hero.body.x)
         if self.hero.position_y < 0:
             self.hero.position_y = 120
             self.map.y -= 1
-
-
+            
         if self.hero.position_y > 120:
             self.hero.position_y = 0
-            self.map.y += 1
+            self.map.y += 1    
+
+
+        
 
     def draw(self):
         pyxel.cls(0)
