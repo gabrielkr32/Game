@@ -83,7 +83,7 @@ class Hero:
             
         if pyxel.btn(pyxel.KEY_S):
             self.position_y += 1
-            self.body.y+= 1
+            self.body.y += 1
             self.running = True
             
             

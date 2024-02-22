@@ -58,13 +58,12 @@ class Map:
        
 
     def draw(self):
-        y = 0
-
-        for row in self.maps[self.y][self.x]:
+       y = 0
+       for row in self.maps[self.y][self.x]:
             x = 0
             for tile in row:
-                 pyxel.blt(x, y, 0, 16*tile, 64, 16, 16)
-                 x += 16
+                pyxel.blt(x, y, 0, 16 * tile, 64, 16, 16)
+                x += 16
             y += 16
 
     def update(self):
